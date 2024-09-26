@@ -101,3 +101,5 @@ function getServiceCard(service){
 
     return card;
 }
+
+initServiceList();
