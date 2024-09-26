@@ -1,0 +1,42 @@
+header{
+    background-color: var(--section-color);
+    padding: 10px;
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .logoContainer{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+    
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 45px;
+    
+            a{
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    
+        .contactContainer{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 10px;
+    
+            a{
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+    }
+}

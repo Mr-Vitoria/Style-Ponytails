@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/ROBOTO-REGULAR.TTF");
+}
+
+:root{
+    --text-color: #333333;
+}
+
+*{
+    font-family: "Roboto";
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 400;
+}
