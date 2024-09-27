@@ -5,6 +5,7 @@
 
 :root{
     --text-color: #333333;
+    --warn-color: #3A5A2A;
 }
 
 *{
@@ -15,9 +16,14 @@
 h1{
     font-size: 44px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h2{
     font-size: 36px;
     font-weight: 400;
+}
+
+span{
+    color: var(--warn-color);
 }
