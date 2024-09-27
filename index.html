@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/textStyle.css">
     <link rel="stylesheet" href="assets/css/header/header.css">
     <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 
 
     <link rel="stylesheet" href="assets/css/index/welcomeSection.css">
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/index/reviewsSection.css">
     <link rel="stylesheet" href="assets/css/index/contactSection.css">
 </head>
-<body>
+<body class="disable">
     <header>
         <div class="content">
             <a class="logoContainer" href="/">
@@ -44,7 +45,7 @@
                 <div class="textContainer">
                     <h1>Добро пожаловать в <span>стильные хвостики</span></h1>
                     <p>Профессиональный груминг домашних животных</p>
-                    <form>
+                    <form method="post" action="#">
                         <input class="input" name="name" placeholder="Имя" autocomplete="name" />
                         <input class="input" name="tel" placeholder="Телефон" autocomplete="tel" />
                         <button type="submit" class="btn">Оставить заявку</button>
@@ -139,7 +140,29 @@
         </div>
     </footer>
 
+    <div class="loader" id="loader">
+        <div role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+
     <script src="assets/js/services.js"></script>
     <script src="assets/js/reviews.js"></script>
+    <script src="assets/js/loader.js"></script>
 </body>
 </html>
