@@ -32,4 +32,113 @@ header .content .contactContainer {
 header .content .contactContainer a {
   text-decoration: none;
   font-size: 16px;
+}
+header .content .mobile {
+  display: none;
+  position: relative;
+}
+header .content .mobile button {
+  background-color: transparent;
+}
+header .content .mobile .menuIcon {
+  width: 20px;
+  height: 25px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  top: 5px;
+}
+header .content .mobile .menuIcon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border-radius: 20px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  padding: 0;
+  transition: 0.25s ease-in-out;
+}
+header .content .mobile .menuIcon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+header .content .mobile .menuIcon span:nth-child(2) {
+  top: 6px;
+  transform-origin: left center;
+}
+header .content .mobile .menuIcon span:nth-child(3) {
+  top: 12px;
+  transform-origin: left center;
+}
+header .content .mobile .dropdownMenu {
+  position: absolute;
+  top: 40px;
+  left: -95px;
+  background-color: var(--section-color);
+  padding: 0 20px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 8px;
+  max-height: 0px;
+  overflow: hidden;
+  transition-duration: 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 0 8px rgba(46, 149, 172, 0.2);
+}
+header .content .mobile .dropdownMenu a:last-child {
+  margin-bottom: 0;
+}
+header .content .mobile.open .menuIcon span:nth-child(1) {
+  transform: rotate(45deg);
+  left: 3px;
+}
+header .content .mobile.open .menuIcon span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+header .content .mobile.open .menuIcon span:nth-child(3) {
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 14px;
+}
+header .content .mobile.open .dropdownMenu {
+  max-height: 200px;
+  transition-duration: 0.5s;
+  padding: 20px;
+}
+
+@media (max-width: 360px) {
+  header {
+    background-color: var(--section-color);
+    padding: 10px;
+  }
+  header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .content .logoContainer {
+    gap: 5px;
+    font-size: 16px;
+  }
+  header .content .logoContainer img {
+    width: 50px;
+    height: 50px;
+  }
+  header .content nav.desktop {
+    display: none;
+  }
+  header .content .contactContainer {
+    display: none;
+  }
+  header .content .mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

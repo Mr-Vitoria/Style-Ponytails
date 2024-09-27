@@ -25,6 +25,7 @@
 .servicesSection .content .list article .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 .servicesSection .content .list article .header h3 {
@@ -65,4 +66,16 @@
   transition-duration: 400ms;
   max-height: 280px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+  .servicesSection {
+    padding: 20px 0;
+  }
+  .servicesSection .content .list article .header h3 {
+    font-size: 20px;
+  }
+  .servicesSection .content .list article .content p, .servicesSection .content .list article .content li {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=serviceSection.css.map */

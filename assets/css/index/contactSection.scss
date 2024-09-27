@@ -1,5 +1,6 @@
 .contactSection{
     background-color: var(--section-color);
+    padding: 50px 0;
 
     .content{
         padding: 0;
@@ -36,6 +37,39 @@
 
             p{
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .contactSection{
+        padding: 20px 0px;
+
+        .content{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+            
+            .mapContainer{
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+    
+            }
+    
+            .textContainer{
+                width: calc(100% - 20px);
+                padding: 0 10px;
+    
+                gap: 10px;
+                a{
+                    font-size: 20px;
+                }
+    
+                p{
+                    font-size: 16px;
+                }
             }
         }
     }

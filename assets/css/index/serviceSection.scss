@@ -27,6 +27,7 @@
                 .header{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
 
                     padding: 10px;
 
@@ -78,6 +79,30 @@
                         transition-duration: 400ms;
                         max-height: 280px;
                         padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .servicesSection{
+        padding: 20px 0;
+    
+        .content{
+            .list{
+                article{
+                    .header{
+                        h3{
+                            font-size: 20px;
+                        }
+                    }
+    
+                    .content{
+                        p, li{
+                            font-size: 14px;
+                        }
                     }
                 }
             }

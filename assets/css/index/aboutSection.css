@@ -41,4 +41,37 @@
 .aboutSection .content .block.list .card h4 {
   font-size: 20px;
   font-weight: 400;
+}
+
+@media (max-width: 360px) {
+  .aboutSection {
+    padding: 20px 0;
+  }
+  .aboutSection .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .aboutSection .content .block {
+    width: 100%;
+    max-width: 100%;
+  }
+  .aboutSection .content .block p {
+    font-size: 16px;
+  }
+  .aboutSection .content .block.list {
+    gap: 10px;
+  }
+  .aboutSection .content .block.list h3 {
+    font-size: 20px;
+  }
+  .aboutSection .content .block.list .card {
+    gap: 10px;
+  }
+  .aboutSection .content .block.list .card img {
+    width: 16px;
+    height: 16px;
+  }
+  .aboutSection .content .block.list .card h4 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=aboutSection.css.map */

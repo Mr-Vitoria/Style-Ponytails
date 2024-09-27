@@ -28,10 +28,12 @@
         gap: 20px;
         width: 100%;
         flex-wrap: wrap;
+        min-height: 80vh;
 
         .card{
             width: calc(25% - (20px * 3 / 4) - 20px);
             max-width: 280px;
+            height: fit-content;
 
             background-color: var(--section-color);
             padding: 10px;
@@ -50,7 +52,7 @@
 
             h3{
                 font-size: 20px;
-                height: -webkit-fill-available;
+                height: 48px;
             }
 
             p{
