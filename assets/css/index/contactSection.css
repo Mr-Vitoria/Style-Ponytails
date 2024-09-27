@@ -1,0 +1,35 @@
+.contactSection {
+  background-color: var(--section-color);
+}
+.contactSection .content {
+  padding: 0;
+  display: flex;
+  margin: 0;
+  gap: 30px;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.contactSection .content .mapContainer {
+  width: calc(50% - 15px);
+  height: calc(100vh - 43px);
+}
+.contactSection .content .mapContainer iframe {
+  width: 100%;
+  height: 100%;
+}
+.contactSection .content .textContainer {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.contactSection .content .textContainer a {
+  font-size: 26px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contactSection .content .textContainer p {
+  font-size: 20px;
+}/*# sourceMappingURL=contactSection.css.map */
