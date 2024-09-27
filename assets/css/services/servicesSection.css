@@ -1,0 +1,55 @@
+.servicesSection {
+  padding: 50px 0;
+}
+.servicesSection .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.servicesSection .header {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+}
+.servicesSection .header button {
+  background-color: transparent;
+  border-radius: 0;
+}
+.servicesSection .header button.active {
+  border-bottom: 1px solid var(--text-color);
+}
+.servicesSection .list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.servicesSection .list .card {
+  width: calc(25% - 15px - 20px);
+  max-width: 280px;
+  background-color: var(--section-color);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.servicesSection .list .card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.servicesSection .list .card h3 {
+  font-size: 20px;
+  height: -webkit-fill-available;
+}
+.servicesSection .list .card p {
+  font-size: 16px;
+}
+.servicesSection .list .card p.price {
+  font-weight: 600;
+}/*# sourceMappingURL=servicesSection.css.map */
