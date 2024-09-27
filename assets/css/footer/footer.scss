@@ -1,0 +1,13 @@
+footer{
+    background-color: var(--section-color);
+    padding: 10px 0;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-size: 20px;
+        }
+    }
+}
