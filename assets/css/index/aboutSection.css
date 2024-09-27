@@ -1,0 +1,44 @@
+.aboutSection {
+  background-color: var(--section-color);
+  padding: 50px;
+}
+.aboutSection .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.aboutSection .content h2 {
+  width: 100%;
+}
+.aboutSection .content .block {
+  width: calc(50% - 15px);
+  max-width: 550px;
+}
+.aboutSection .content .block p {
+  font-size: 20px;
+}
+.aboutSection .content .block.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutSection .content .block.list h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.aboutSection .content .block.list .card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.aboutSection .content .block.list .card img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aboutSection .content .block.list .card h4 {
+  font-size: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=aboutSection.css.map */

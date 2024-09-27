@@ -27,7 +27,8 @@
   padding: 10px;
 }
 .servicesSection .content .list article .header h3 {
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: 400;
 }
 .servicesSection .content .list article .header button {
   background-color: transparent;
@@ -47,7 +48,12 @@
   gap: 10px;
 }
 .servicesSection .content .list article .content p, .servicesSection .content .list article .content li {
-  font-size: 20px;
+  font-size: 16px;
+}
+.servicesSection .content .list article .content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .servicesSection .content .list article.active .content {
   transition-duration: 400ms;
