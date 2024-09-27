@@ -76,6 +76,8 @@ function getReviewCard(review){
                     <div class="content">
                         <p>${review.description}</p>
                     </div>`;
+
+      return card;
 }
 
 initReviewList();

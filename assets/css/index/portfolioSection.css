@@ -1,0 +1,21 @@
+.portfolioSection {
+  background-color: var(--section-color);
+  padding: 50px 0;
+}
+.portfolioSection .content {
+  display: flex;
+  flex-direction: column;
+}
+.portfolioSection .content .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.portfolioSection .content .list img {
+  width: calc(25% - 22.5px);
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=portfolioSection.css.map */
