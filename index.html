@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="assets/css/header/header.css">
     <link rel="stylesheet" href="assets/css/footer/footer.css">
     <link rel="stylesheet" href="assets/css/loader.css">
-
-
+    
+    
     <link rel="stylesheet" href="assets/css/index/welcomeSection.css">
     <link rel="stylesheet" href="assets/css/index/serviceSection.css">
     <link rel="stylesheet" href="assets/css/index/aboutSection.css">
     <link rel="stylesheet" href="assets/css/index/portfolioSection.css">
     <link rel="stylesheet" href="assets/css/index/reviewsSection.css">
     <link rel="stylesheet" href="assets/css/index/contactSection.css">
+    <link rel="stylesheet" href="assets/css/imageModal/imageModal.css">
 </head>
 <body class="disable">
     <header>
@@ -98,15 +99,7 @@
         <section class="portfolioSection">
             <div class="content">
                 <h2>Портфолио</h2>
-                <div class="list">
-                    <img src="assets/img/portfolio/first.png" alt="Портфолио" />
-                    <img src="assets/img/portfolio/second.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/third.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/four.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/five.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/six.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/seven.jpeg" alt="Портфолио" />
-                    <img src="assets/img/portfolio/eight.jpeg" alt="Портфолио" />
+                <div class="list" id="portfolioList">
                 </div>
             </div>
         </section>
@@ -161,8 +154,22 @@
         </div>
     </div>
 
+    <div id="imageModal">
+        <div class="header">
+            <button onclick="closeImageModal()">
+                <img src="assets/img/icons/plus.svg" alt="Close"/>
+            </button>
+
+        </div>
+        <div class="imageContent">
+            <img src="" id="imageContent" alt="Content"/> 
+        </div>
+    </div>
+
     <script src="assets/js/services.js"></script>
     <script src="assets/js/reviews.js"></script>
+    <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/imageModal.js"></script>
 </body>
 </html>

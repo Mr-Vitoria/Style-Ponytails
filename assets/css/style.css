@@ -19,6 +19,8 @@ body{
     background-color: rgb(243, 235, 220);
 }
 
+html.disable, body.disable {margin: 0; height: 100%; overflow: hidden}
+
 input{
     color: var(--text-color);
     background-color: transparent;

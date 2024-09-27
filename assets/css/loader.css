@@ -24,8 +24,6 @@
     transition-duration: .5s;
 }
 
-html.disable, body.disable {margin: 0; height: 100%; overflow: hidden}
-
 /* From Uiverse.io by Nawsome */ 
 .wheel-and-hamster {
     --dur: 1s;
