@@ -1,0 +1,67 @@
+.reviewsSection{
+    padding: 50px 0;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            article{
+                width: calc(33% - (30px * 2 / 3) - 40px);
+                height: fit-content;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 10px;
+
+                background-color: var(--section-color);
+                padding: 20px;
+                border-radius: 10px;
+
+                .userInfo{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    .textContainer{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p{
+                            font-size: 20px;
+                        }
+
+                        .starContainer{
+                            display: flex;
+                            gap: 5px;
+
+                            img{
+                                width: 15px;
+                                height: 15px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+
+                .content{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
