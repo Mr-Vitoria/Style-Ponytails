@@ -1,7 +1,7 @@
 const serviceList = document.getElementById("serviceList");
 const services = [
   {
-    title: "Кмплексный уход",
+    title: "Комплексный уход",
     description: "Все необходимое для ухода за вашим питомцем включая стрижку.",
     items: [
         "Мытьё",
@@ -86,18 +86,23 @@ function getServiceCard(service){
     let cardButton = document.createElement("button");
     cardButton.innerHTML = `<img src="assets/img/icons/plus.svg" alt="Открыть"/>`;
 
+    card.addEventListener("click", (ev) => {
+      card.classList.toggle("active");
+    })
+
     cardHeader.appendChild(cardTitle);
     cardHeader.appendChild(cardButton);
 
     card.appendChild(cardHeader);
+    let itemsHtml = "";
+    for (const item of service.items) {
+      itemsHtml += `<li>${item}</li>`;
+    }
     card.innerHTML += `<div class="content">
                             <p>${service.description}</p>
                             <p>Этапы услуги:</p>
-                            <ul>`;
-    for (const item of service.items) {
-        card.innerHTML += `<li>${item}</li>`;
-    }
-    card.innerHTML += `</ul></div>`;
+                            <ul>${itemsHtml}</ul>
+                            </div>`;
 
     return card;
 }
