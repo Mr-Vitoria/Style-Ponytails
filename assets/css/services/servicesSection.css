@@ -11,6 +11,9 @@
   display: flex;
   gap: 30px;
   justify-content: flex-start;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 10px;
 }
 .servicesSection .header button {
   background-color: transparent;
@@ -49,10 +52,55 @@
 .servicesSection .list .card h3 {
   font-size: 20px;
   height: 48px;
+  overflow: hidden;
 }
 .servicesSection .list .card p {
   font-size: 16px;
 }
 .servicesSection .list .card p.price {
   font-weight: 600;
+}
+
+@media (max-width: 1360px) {
+  .servicesSection .list .card {
+    width: calc(33% - 13.3333333333px - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .servicesSection {
+    padding: 20px 0;
+  }
+  .servicesSection .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .servicesSection .header {
+    gap: 10px;
+  }
+  .servicesSection .header button {
+    font-size: 16px;
+  }
+  .servicesSection .list {
+    gap: 10px;
+  }
+  .servicesSection .list .card {
+    width: calc(50% - 5px - 20px);
+    max-width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .servicesSection .list .card h3 {
+    font-size: 16px;
+    height: 48px;
+  }
+  .servicesSection .list .card p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .servicesSection .list .card {
+    width: calc(100% - 20px);
+  }
 }/*# sourceMappingURL=servicesSection.css.map */
