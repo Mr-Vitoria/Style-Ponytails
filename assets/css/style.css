@@ -46,7 +46,7 @@ button{
     padding: 8.5px 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1200px) {
     .content{
         padding: 0 10px;
     }

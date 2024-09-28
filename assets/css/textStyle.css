@@ -28,3 +28,17 @@ h2{
 span{
     color: var(--warn-color);
 }
+
+
+@media (max-width: 1375px) {
+    h1{
+        font-size: 36px;
+        font-weight: 400;
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+}
