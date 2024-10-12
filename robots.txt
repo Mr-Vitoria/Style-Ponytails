@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/
+Allow: /
+Allow: /assets/img/logo.png
+Sitemap: http://map.outouch.ru/sitemap.xml
